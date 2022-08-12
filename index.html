@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+<style>
+body 
+{
+	background-color: #555555;
+	font-family: 'Lato', sans-serif;
+	font-size:30px;
+	color: #FFFFFF;
+}
+a {
+color: #00FFFF;
+}
+button {
+	color: black;
+	border: 0px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	padding: 15px;	
+}
+button:hover {
+	background-color: #F1F1F1;
+}
+</style>
+
+<script>
+function alemamkurwaesseziomus()
+{
+var audio = new Audio('essa.mp3');
+document.getElementById("essa").innerHTML = "Wylosowana wartość essy to: " + parseInt(Math.random() * 100) + "%";
+audio.play();
+}
+</script>
+
+<title>ESSA METER</title>
+
+<script>
+</script>
+</head>
+<body><center>
+<H1>ESSA METER</H1> 
+
+<button onclick="alemamkurwaesseziomus()">Sprawdź swój Wskaźnik essy już dziś!</button>
+<h5 id="essa"></h5>
+
+<a href="https://steamcommunity.com/id/hypersonic0">Autor</a>
+</center></body>
+
+</html>
+
